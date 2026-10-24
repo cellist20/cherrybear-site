@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cherrybear — 체리베어</title>
+<meta name="description" content="Cherrybear(체리베어)는 사람들이 매일 쓰는 작은 모바일 앱을 만드는 1인 앱 스튜디오입니다.">
+<link rel="icon" href="/unse2027/icon.png">
+<style>
+  :root { --bg:#fbf8f6; --ink:#1f1a1c; --muted:#6b6266; --accent:#c8324a; --card:#fff; --line:#ece4e1; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system, "Noto Sans KR", "Malgun Gothic", "Segoe UI", sans-serif; line-height:1.7; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0; display:flex; align-items:center; gap:10px; }
+  .logo { width:34px; height:34px; border-radius:50%; background: radial-gradient(circle at 35% 35%, #ff6b7f, var(--accent)); position:relative; }
+  .logo::before, .logo::after { content:""; position:absolute; top:-6px; width:12px; height:12px; border-radius:50%; background:var(--accent); }
+  .logo::before { left:-2px; } .logo::after { right:-2px; }
+  .brand { font-weight:800; font-size:1.2rem; letter-spacing:-.01em; }
+  .hero { padding: 56px 0 40px; }
+  .hero h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height:1.25; margin:0 0 14px; letter-spacing:-.02em; }
+  .hero p { color:var(--muted); font-size:1.05rem; margin:0; max-width: 620px; }
+  h2 { font-size:1.15rem; margin: 48px 0 16px; }
+  .app { display:flex; gap:18px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px; text-decoration:none; color:inherit; }
+  .app img { width:72px; height:72px; border-radius:16px; flex:none; }
+  .app b { display:block; font-size:1.05rem; }
+  .app span { color:var(--muted); font-size:.95rem; }
+  .tag { display:inline-block; margin-top:6px; font-size:.8rem; color:var(--accent); border:1px solid #f3c7cf; border-radius:999px; padding:1px 10px; }
+  .contact { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px; }
+  .contact a { color:var(--accent); }
+  footer { margin: 64px 0 40px; padding-top: 20px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
+  footer p { margin: 2px 0; }
+  .en { color:var(--muted); font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><div class="logo" aria-hidden="true"></div><div class="brand">Cherrybear</div></header>
+
+  <section class="hero">
+    <h1>매일 손이 가는<br>작은 앱을 만듭니다.</h1>
+    <p>Cherrybear(체리베어)는 운세, 이야기, 일상 도구처럼 사람들이 이미 즐겨 쓰는 것들을 더 쉽고 좋게 만드는 1인 앱 스튜디오입니다.</p>
+    <p class="en" style="margin-top:12px">Cherrybear is an independent mobile app studio based in Korea, building small, delightful apps for everyday life.</p>
+  </section>
+
+  <h2>앱 · Apps</h2>
+  <a class="app" href="/unse2027/">
+    <img src="/unse2027/icon.png" alt="2027 신년운세 앱 아이콘">
+    <div>
+      <b>2027 신년운세</b>
+      <span>생년월일로 사주를 세우고, 정미년(丁未年) 한 해의 흐름을 영역별·월별로 풀어드려요.</span><br>
+      <span class="tag">Android · 출시 예정</span>
+    </div>
+  </a>
+
+  <h2>문의 · Contact</h2>
+  <div class="contact">
+    <p style="margin:0">제휴·고객 문의: <a href="mailto:contact@cherrybear.xyz">contact@cherrybear.xyz</a></p>
+    <p class="en" style="margin:4px 0 0">For business and support inquiries, email us at contact@cherrybear.xyz.</p>
+  </div>
+
+  <footer>
+    <p><b>Cherrybear (체리베어)</b> · 대표자 [대표자명] · 사업자등록번호 578-13-02985</p>
+    <p>경기도 오산시 오산로212번길 11-3, 301-B31 (18141)</p>
+    <p>11-3 Osan-ro 212beon-gil, 301-B31, Osan-si, Gyeonggi-do 18141, Republic of Korea</p>
+    <p>D-U-N-S® 697010524 · contact@cherrybear.xyz</p>
+    <p style="margin-top:10px">© 2026 Cherrybear. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
