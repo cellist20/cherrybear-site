@@ -25,5 +25,5 @@ git subtree push --prefix=site site-pages main
 
 이메일 `contact@cherrybear.xyz`는 ImprovMX(무료 포워딩)로 bearbeer756@gmail.com에 전달한다.
 
-`[대표자명]` 자리는 사업자등록증의 대표자 성명으로 채운다(index.html, unse2027/privacy.html, unse2027/terms.html).
+`박영주` 자리는 사업자등록증의 대표자 성명으로 채운다(index.html, unse2027/privacy.html, unse2027/terms.html).
 새 앱을 내면 `site/<앱>/`에 같은 구조로 추가한다.
