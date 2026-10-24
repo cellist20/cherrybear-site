@@ -9,9 +9,10 @@ GitHub Pages 저장소 `cellist20/cherrybear-site`로 서빙한다. 이 폴더�
 
 ```bash
 git subtree push --prefix=site site-pages main
+# 원격에 GitHub가 만든 CNAME 커밋이 있어 거부되면: 분할 커밋에 site-pages/main을 -s ours로 병합한 뒤 일반 push
 ```
 
-## DNS (도메인 등록기관에서 설정)
+## DNS (Cloudflare, 계정 marchingwthu@gmail.com) — A·CNAME은 반드시 DNS only(회색 구름)
 | 유형 | 이름 | 값 |
 |---|---|---|
 | A | @ | 185.199.108.153 |
@@ -19,11 +20,8 @@ git subtree push --prefix=site site-pages main
 | A | @ | 185.199.110.153 |
 | A | @ | 185.199.111.153 |
 | CNAME | www | cellist20.github.io |
-| MX | @ | mx1.improvmx.com (우선순위 10) |
-| MX | @ | mx2.improvmx.com (우선순위 20) |
-| TXT | @ | v=spf1 include:spf.improvmx.com ~all |
 
-이메일 `contact@cherrybear.xyz`는 ImprovMX(무료 포워딩)로 bearbeer756@gmail.com에 전달한다.
+이메일 `contact@cherrybear.xyz`는 Cloudflare Email Routing(MX·SPF 자동 추가)으로 bearbeer756@gmail.com에 전달한다.
 
-`박영주` 자리는 사업자등록증의 대표자 성명으로 채운다(index.html, unse2027/privacy.html, unse2027/terms.html).
+대표자 박영주 (index.html, unse2027/privacy.html, unse2027/terms.html 하단).
 새 앱을 내면 `site/<앱>/`에 같은 구조로 추가한다.
